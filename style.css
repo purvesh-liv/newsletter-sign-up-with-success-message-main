@@ -15,7 +15,7 @@ main{
 .card{
     background:  hsl(0, 0%, 100%)  ;
     padding: 2rem 1.2rem;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 8px;
 }
 .main-img{
@@ -69,4 +69,20 @@ button{
     cursor: pointer;
     border-radius: 8px;
      
+}
+@media(min-width: 768px){
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        border-radius: 35px;
+    }
+    .card-content{
+        justify-content: center;
+        margin: 0.2rem 2rem;
+    }
+    h1{
+        font-size: 50px;
+        color: hsl(234, 29%, 20%);
+    }
 }
